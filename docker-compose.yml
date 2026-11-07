@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: ec2-lb-test
+    restart: unless-stopped
+    ports:
+      - "80:80"
